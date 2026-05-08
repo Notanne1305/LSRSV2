@@ -143,9 +143,9 @@
         <img src="{{ asset('images/model-cutout.png') }}" alt="Love and Styles Model" class="absolute inset-0 w-full h-full object-contain object-bottom z-10 drop-shadow-2xl pointer-events-none" />
         
         {{-- Logo Overlay (Top Right) --}}
-        <div class="absolute top-10 right-12 z-20 text-white flex items-center gap-2 drop-shadow-lg opacity-90">
+       <div class="absolute top-10 right-12 z-20 text-white flex items-center gap-2 drop-shadow-lg opacity-90">
             <span class="text-[1.7rem] font-colonna tracking-[0.15em] uppercase">Love</span>
-            <span class="text-xl">&amp;</span>
+            <span class="text-xl font-pristina">&amp;</span>
             <span class="text-[2.2rem] font-pristina">Styles</span>
         </div>
 

@@ -18,15 +18,18 @@
     font-family: 'Colonna Regular';
     font-style: normal;
     font-weight: 400;
-    src: local('Colonna Regular'), local('Colonna MT');
+    src: url('../fonts/colonna.TTF') format('truetype'),
+         local('Colonna Regular'), local('Colonna MT');
     font-display: swap;
+    size-adjust: 140%;
 }
 
 @font-face {
     font-family: 'Pristina Black';
     font-style: normal;
     font-weight: 400;
-    src: local('Pristina Black'), local('Pristina');
+    src: url('../fonts/pristina.TTF') format('truetype'),
+         local('Pristina Black'), local('Pristina');
     font-display: swap;
 }
 
@@ -41,7 +44,7 @@
 }
 
 .font-pristina {
-    font-family: 'Pristina', 'Pristina Black', serif;
+    font-family: 'Pristina Black', 'Pristina', serif;
 }
 
 .font-harmonia {

@@ -16,17 +16,9 @@ Route::middleware(['guest'])->group(function () {
 
     Route::get('/register', [AuthController::class,  'showRegisterForm'])->name('register');
     Route::get('/', [AuthController::class, 'showLoginForm'])->name('loginForm');
-    Route::get('/login', [AuthController::class, 'showLoginForm'])->name('loginForm');
+    Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
     Route::post('/register', [AuthController::class, 'register']);
     Route::post('/login', [AuthController::class, 'login'])->name('login');
-
-    Route::prefix('otp')->group(function () {
-        Route::post('/generate-otp', [OtpController::class, 'generateOtp']);
-        Route::post('/verify-otp', [OtpController::class, 'verifyOtp']);
-        Route::post('/resend-otp', [OtpController::class, 'resendOtp']);
-        Route::post('/delete-otp', [OtpController::class, 'deleteOtp']);
-        Route::post('/reset-password', [AuthController::class, 'resetPassword']);
-    });
 
 });
 
