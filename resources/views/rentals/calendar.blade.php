@@ -13,10 +13,6 @@
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
-
-    {{-- Fonts: Geist & Geist Mono --}}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-
     {{-- FullCalendar via CDN --}}
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
 
@@ -48,7 +44,6 @@
             --fc-page-bg-color: transparent;
             --fc-neutral-bg-color: rgb(250 250 250);
             --fc-event-border-color: transparent;
-            font-family: 'Geist', system-ui, sans-serif;
         }
 
         /* Dark Mode Overrides */
@@ -184,7 +179,7 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex font-geist bg-neutral-100 text-neutral-900 dark:bg-black dark:text-neutral-50 transition-colors duration-300 ease-in-out">
+<body class="font-harmonia">
     <x-sidebar />
 
     <main class="flex-1 ml-64 flex flex-col px-10 py-8 overflow-x-hidden overflow-y-auto scrollbar-hide bg-gradient-to-b from-neutral-100 via-neutral-100 to-neutral-200 dark:from-black dark:via-black dark:to-neutral-950 transition-colors duration-300 ease-in-out">
@@ -196,7 +191,7 @@
                     <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white transition-colors duration-300 ease-in-out">
                         Rental Calendar
                     </h1>
-                    <p class="mt-1 text-sm font-geist-mono text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
+                    <p class="mt-1 text-sm font-harmonia text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
                         View rental due dates and returns at a glance
                     </p>
                 </div>
@@ -283,7 +278,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-semibold text-neutral-900 dark:text-white">Rental Details</h3>
-                            <p id="modalRentalId" class="text-xs font-geist-mono text-neutral-500 dark:text-neutral-400">#---</p>
+                            <p id="modalRentalId" class="text-xs font-harmonia text-neutral-500 dark:text-neutral-400">#---</p>
                         </div>
                     </div>
                     <button onclick="closeEventModal()" class="p-2 rounded-lg text-neutral-400 hover:text-neutral-600 dark:hover:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
@@ -312,7 +307,7 @@
                         <div class="flex-1">
                             <p class="text-xs text-neutral-500 dark:text-neutral-400">Item</p>
                             <p id="modalItemName" class="text-sm font-medium text-neutral-900 dark:text-white">---</p>
-                            <p id="modalItemCode" class="text-xs font-geist-mono text-neutral-400">---</p>
+                            <p id="modalItemCode" class="text-xs font-harmonia text-neutral-400">---</p>
                         </div>
                     </div>
 

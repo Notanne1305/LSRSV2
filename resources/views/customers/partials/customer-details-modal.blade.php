@@ -55,7 +55,7 @@
                                     <span>Customer ID</span>
                                 </div>
                                 <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-3 border border-neutral-200 dark:border-neutral-800">
-                                    <p id="detailCustomerId" class="text-sm font-semibold text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailCustomerId" class="text-sm font-semibold text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                                         <x-icon name="phone" class="h-3 w-3 text-neutral-400" />
                                         <p class="text-xs text-neutral-500 dark:text-neutral-400">Contact Number</p>
                                     </div>
-                                    <p id="detailCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
 
                                 {{-- Address --}}
@@ -114,7 +114,7 @@
                                         </svg>
                                         <p class="text-xs text-neutral-500 dark:text-neutral-400">Height</p>
                                     </div>
-                                    <p id="detailMeasurementHeight" class="text-lg font-bold text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailMeasurementHeight" class="text-lg font-bold text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
 
                                 {{-- Chest --}}
@@ -126,7 +126,7 @@
                                         </svg>
                                         <p class="text-xs text-neutral-500 dark:text-neutral-400">Chest</p>
                                     </div>
-                                    <p id="detailMeasurementChest" class="text-lg font-bold text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailMeasurementChest" class="text-lg font-bold text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
 
                                 {{-- Waist --}}
@@ -139,7 +139,7 @@
                                         </svg>
                                         <p class="text-xs text-neutral-500 dark:text-neutral-400">Waist</p>
                                     </div>
-                                    <p id="detailMeasurementWaist" class="text-lg font-bold text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailMeasurementWaist" class="text-lg font-bold text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
 
                                 {{-- Hips --}}
@@ -152,7 +152,7 @@
                                         </svg>
                                         <p class="text-xs text-neutral-500 dark:text-neutral-400">Hips</p>
                                     </div>
-                                    <p id="detailMeasurementHips" class="text-lg font-bold text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailMeasurementHips" class="text-lg font-bold text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
                             </div>
 
@@ -191,19 +191,19 @@
                         <div class="grid grid-cols-3 gap-3">
                             {{-- Total Rentals --}}
                             <div class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 dark:from-violet-500/20 dark:to-purple-500/20 rounded-xl p-4 border border-violet-200 dark:border-violet-800/50 text-center">
-                                <p id="detailTotalRentals" class="text-2xl font-bold text-violet-600 dark:text-violet-400 font-geist-mono">0</p>
+                                <p id="detailTotalRentals" class="text-2xl font-bold text-violet-600 dark:text-violet-400 font-harmonia">0</p>
                                 <p class="text-xs text-violet-600/70 dark:text-violet-400/70 mt-1">Total Rentals</p>
                             </div>
 
                             {{-- Active Rentals --}}
                             <div class="bg-gradient-to-br from-amber-500/10 to-orange-500/10 dark:from-amber-500/20 dark:to-orange-500/20 rounded-xl p-4 border border-amber-200 dark:border-amber-800/50 text-center">
-                                <p id="detailActiveRentals" class="text-2xl font-bold text-amber-600 dark:text-amber-400 font-geist-mono">0</p>
+                                <p id="detailActiveRentals" class="text-2xl font-bold text-amber-600 dark:text-amber-400 font-harmonia">0</p>
                                 <p class="text-xs text-amber-600/70 dark:text-amber-400/70 mt-1">Active</p>
                             </div>
 
                             {{-- Total Reservations --}}
                             <div class="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 dark:from-cyan-500/20 dark:to-blue-500/20 rounded-xl p-4 border border-cyan-200 dark:border-cyan-800/50 text-center">
-                                <p id="detailTotalReservations" class="text-2xl font-bold text-cyan-600 dark:text-cyan-400 font-geist-mono">0</p>
+                                <p id="detailTotalReservations" class="text-2xl font-bold text-cyan-600 dark:text-cyan-400 font-harmonia">0</p>
                                 <p class="text-xs text-cyan-600/70 dark:text-cyan-400/70 mt-1">Reservations</p>
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                                     <x-icon name="shopping-bag" class="h-4 w-4" />
                                     <span>Recent Rentals</span>
                                 </div>
-                                <span id="detailRentalsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 rentals</span>
+                                <span id="detailRentalsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 rentals</span>
                             </div>
 
                             <div id="detailRecentRentals" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-48 overflow-y-auto">
@@ -233,7 +233,7 @@
                                     <x-icon name="calendar" class="h-4 w-4" />
                                     <span>Recent Reservations</span>
                                 </div>
-                                <span id="detailReservationsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 reservations</span>
+                                <span id="detailReservationsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 reservations</span>
                             </div>
 
                             <div id="detailRecentReservations" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-48 overflow-y-auto">
@@ -526,7 +526,7 @@
                         <div class="px-4 py-3 flex items-center justify-between hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition-colors">
                             <div class="flex items-center gap-3">
                                 <div class="h-8 w-8 rounded-lg bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center flex-shrink-0">
-                                    <span class="text-[10px] font-bold text-violet-600 dark:text-violet-400 font-geist-mono">#${rental.rental_id}</span>
+                                    <span class="text-[10px] font-bold text-violet-600 dark:text-violet-400 font-harmonia">#${rental.rental_id}</span>
                                 </div>
                                 <div class="min-w-0">
                                     <p class="text-sm font-medium text-neutral-900 dark:text-white truncate">${rentalDate}</p>
@@ -588,7 +588,7 @@
                         <div class="px-4 py-3 flex items-center justify-between hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition-colors">
                             <div class="flex items-center gap-3">
                                 <div class="h-8 w-8 rounded-lg bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center flex-shrink-0">
-                                    <span class="text-[10px] font-bold text-cyan-600 dark:text-cyan-400 font-geist-mono">#${reservation.reservation_id}</span>
+                                    <span class="text-[10px] font-bold text-cyan-600 dark:text-cyan-400 font-harmonia">#${reservation.reservation_id}</span>
                                 </div>
                                 <div class="min-w-0">
                                     <p class="text-sm font-medium text-neutral-900 dark:text-white truncate">Reserved: ${reservationDate}</p>

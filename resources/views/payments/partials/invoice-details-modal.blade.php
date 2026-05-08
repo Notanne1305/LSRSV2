@@ -91,7 +91,7 @@
                                             <x-icon name="phone" class="h-3 w-3 text-neutral-400" />
                                             <p class="text-xs text-neutral-500 dark:text-neutral-400">Contact Number</p>
                                         </div>
-                                        <p id="detailInvoiceCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                        <p id="detailInvoiceCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-harmonia">-</p>
                                     </div>
                                 </div>
                             </div>
@@ -160,19 +160,19 @@
                                 {{-- Total Amount --}}
                                 <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-4 border border-neutral-200 dark:border-neutral-800 text-center">
                                     <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-1">Total Amount</p>
-                                    <p id="detailInvoiceTotalAmount" class="text-xl font-bold text-neutral-900 dark:text-white font-geist-mono">₱0</p>
+                                    <p id="detailInvoiceTotalAmount" class="text-xl font-bold text-neutral-900 dark:text-white font-harmonia">₱0</p>
                                 </div>
 
                                 {{-- Amount Paid --}}
                                 <div class="bg-emerald-50 dark:bg-emerald-900/10 rounded-xl p-4 border border-emerald-200 dark:border-emerald-800/50 text-center">
                                     <p class="text-xs text-emerald-600/70 dark:text-emerald-400/70 mb-1">Amount Paid</p>
-                                    <p id="detailInvoiceAmountPaid" class="text-xl font-bold text-emerald-600 dark:text-emerald-400 font-geist-mono">₱0</p>
+                                    <p id="detailInvoiceAmountPaid" class="text-xl font-bold text-emerald-600 dark:text-emerald-400 font-harmonia">₱0</p>
                                 </div>
 
                                 {{-- Balance Due --}}
                                 <div id="detailInvoiceBalanceCard" class="bg-amber-50 dark:bg-amber-900/10 rounded-xl p-4 border border-amber-200 dark:border-amber-800/50 text-center">
                                     <p class="text-xs text-amber-600/70 dark:text-amber-400/70 mb-1">Balance Due</p>
-                                    <p id="detailInvoiceBalanceDue" class="text-xl font-bold text-amber-600 dark:text-amber-400 font-geist-mono">₱0</p>
+                                    <p id="detailInvoiceBalanceDue" class="text-xl font-bold text-amber-600 dark:text-amber-400 font-harmonia">₱0</p>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +184,7 @@
                                     <x-icon name="list" class="h-4 w-4" />
                                     <span>Line Items</span>
                                 </div>
-                                <span id="detailInvoiceItemsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 items</span>
+                                <span id="detailInvoiceItemsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 items</span>
                             </div>
 
                             <div id="detailInvoiceItems" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-48 overflow-y-auto">
@@ -198,15 +198,15 @@
                             <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-3 border border-neutral-200 dark:border-neutral-800 flex flex-col gap-1.5 text-sm">
                                 <div class="flex justify-between text-neutral-500 dark:text-neutral-400">
                                     <span>Subtotal:</span>
-                                    <span id="detailInvoiceSubtotal" class="font-geist-mono">₱0</span>
+                                    <span id="detailInvoiceSubtotal" class="font-harmonia">₱0</span>
                                 </div>
                                 <div class="flex justify-between text-rose-500 dark:text-rose-400 hidden" id="detailInvoiceDiscountRow">
                                     <span>Discount:</span>
-                                    <span id="detailInvoiceDiscount" class="font-geist-mono">-₱0</span>
+                                    <span id="detailInvoiceDiscount" class="font-harmonia">-₱0</span>
                                 </div>
                                 <div class="flex justify-between text-neutral-500 dark:text-neutral-400 hidden" id="detailInvoiceTaxRow">
                                     <span>Tax:</span>
-                                    <span id="detailInvoiceTax" class="font-geist-mono">+₱0</span>
+                                    <span id="detailInvoiceTax" class="font-harmonia">+₱0</span>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                                     <x-icon name="dollar-sign" class="h-4 w-4" />
                                     <span>Payment History</span>
                                 </div>
-                                <span id="detailInvoicePaymentsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 payments</span>
+                                <span id="detailInvoicePaymentsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 payments</span>
                             </div>
 
                             <div id="detailInvoicePayments" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-40 overflow-y-auto">
@@ -413,7 +413,7 @@
             resEl.innerHTML = `
                 <div class="flex items-center gap-3">
                     <div class="h-8 w-8 rounded-lg bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center flex-shrink-0">
-                                        <span class="text-[10px] font-bold text-violet-600 dark:text-violet-400 font-geist-mono">#${invoice.reservation_id}</span>
+                                        <span class="text-[10px] font-bold text-violet-600 dark:text-violet-400 font-harmonia">#${invoice.reservation_id}</span>
                                     </div>
                                     <div class="min-w-0">
                                         <p class="text-sm font-medium text-neutral-900 dark:text-white">Reservation</p>
@@ -433,7 +433,7 @@
                             <a href="/rentals?highlight=${invoice.rental_id}" class="block hover:bg-neutral-100 dark:hover:bg-neutral-800/50 rounded-lg -mx-2 -my-1 px-2 py-1 transition-colors">
                                 <div class="flex items-center gap-3">
                                     <div class="h-8 w-8 rounded-lg bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center flex-shrink-0">
-                                        <span class="text-[10px] font-bold text-sky-600 dark:text-sky-400 font-geist-mono">#${invoice.rental_id}</span>
+                                        <span class="text-[10px] font-bold text-sky-600 dark:text-sky-400 font-harmonia">#${invoice.rental_id}</span>
                                     </div>
                                     <div class="min-w-0">
                                         <p class="text-sm font-medium text-neutral-900 dark:text-white">Rental</p>
@@ -457,11 +457,11 @@
         if (balanceDue <= 0) {
             balCard.className = 'bg-emerald-50 dark:bg-emerald-900/10 rounded-xl p-4 border border-emerald-200 dark:border-emerald-800/50 text-center';
             balCard.querySelector('p:first-child').className = 'text-xs text-emerald-600/70 dark:text-emerald-400/70 mb-1';
-            balCard.querySelector('p:last-child').className = 'text-xl font-bold text-emerald-600 dark:text-emerald-400 font-geist-mono';
+            balCard.querySelector('p:last-child').className = 'text-xl font-bold text-emerald-600 dark:text-emerald-400 font-harmonia';
         } else {
             balCard.className = 'bg-amber-50 dark:bg-amber-900/10 rounded-xl p-4 border border-amber-200 dark:border-amber-800/50 text-center';
             balCard.querySelector('p:first-child').className = 'text-xs text-amber-600/70 dark:text-amber-400/70 mb-1';
-            balCard.querySelector('p:last-child').className = 'text-xl font-bold text-amber-600 dark:text-amber-400 font-geist-mono';
+            balCard.querySelector('p:last-child').className = 'text-xl font-bold text-amber-600 dark:text-amber-400 font-harmonia';
         }
 
         // Subtotal Breakdown
@@ -537,7 +537,7 @@
                             </div>
                             <div class="flex items-center gap-4 flex-shrink-0 ml-4">
                                 <div class="bg-neutral-100 dark:bg-neutral-800/80 rounded-lg px-2 py-1 border border-neutral-200 dark:border-neutral-700">
-                                    <p class="text-xs font-semibold text-neutral-700 dark:text-neutral-300 font-geist-mono">₱${totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
+                                    <p class="text-xs font-semibold text-neutral-700 dark:text-neutral-300 font-harmonia">₱${totalPrice.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
                                 </div>
                             </div>
                         </div>
@@ -586,7 +586,7 @@
                                 <span class="inline-flex items-center rounded-full ${statusColor} px-2 py-0.5 text-[10px] font-medium border flex-shrink-0">
                                     ${payment.status?.status_name || (payment.status_id === 2 ? 'Completed' : 'Pending')}
                                 </span>
-                                <p class="text-sm font-semibold text-neutral-900 dark:text-white font-geist-mono ml-2">₱${amount.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
+                                <p class="text-sm font-semibold text-neutral-900 dark:text-white font-harmonia ml-2">₱${amount.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
                             </div>
                         </div>
                     `;

@@ -97,17 +97,17 @@
                                 </div>
                                 <div class="space-y-3">
                                     <div>
-                                        <p id="browseItemDetailRentalPrice" class="text-xl font-bold text-violet-600 dark:text-violet-400 font-geist-mono">-</p>
+                                        <p id="browseItemDetailRentalPrice" class="text-xl font-bold text-violet-600 dark:text-violet-400 font-harmonia">-</p>
                                         <p class="text-xs text-neutral-500 dark:text-neutral-400">Rental price</p>
                                     </div>
                                     <hr class="border-neutral-200 dark:border-neutral-800">
                                     <div id="browseItemDetailSellingPriceRow" class="hidden flex items-center justify-between">
                                         <span class="text-xs text-neutral-500 dark:text-neutral-400">Selling price</span>
-                                        <span id="browseItemDetailSellingPrice" class="text-sm font-medium text-neutral-900 dark:text-white font-geist-mono">-</span>
+                                        <span id="browseItemDetailSellingPrice" class="text-sm font-medium text-neutral-900 dark:text-white font-harmonia">-</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <span class="text-xs text-neutral-500 dark:text-neutral-400">Deposit</span>
-                                        <span id="browseItemDetailDeposit" class="text-sm font-medium text-neutral-900 dark:text-white font-geist-mono">-</span>
+                                        <span id="browseItemDetailDeposit" class="text-sm font-medium text-neutral-900 dark:text-white font-harmonia">-</span>
                                     </div>
                                 </div>
                             </div>

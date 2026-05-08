@@ -55,7 +55,7 @@
                                     <span>Rental ID</span>
                                 </div>
                                 <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-3 border border-neutral-200 dark:border-neutral-800">
-                                    <p id="detailRentalId" class="text-sm font-semibold text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailRentalId" class="text-sm font-semibold text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                                             <x-icon name="phone" class="h-3 w-3 text-neutral-400" />
                                             <p class="text-xs text-neutral-500 dark:text-neutral-400">Contact Number</p>
                                         </div>
-                                        <p id="detailRentalCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                        <p id="detailRentalCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-harmonia">-</p>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@
                                     </div>
                                     <div class="flex-1 min-w-0">
                                         <p id="detailRentalItemName" class="text-base font-semibold text-neutral-900 dark:text-white truncate">-</p>
-                                        <p id="detailRentalItemSku" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono mt-0.5">-</p>
+                                        <p id="detailRentalItemSku" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia mt-0.5">-</p>
                                         <p id="detailRentalItemDetails" class="text-sm text-neutral-600 dark:text-neutral-300 mt-1">-</p>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                     <div>
                                         <p class="text-sm font-semibold text-rose-700 dark:text-rose-300">Overdue Rental</p>
                                         <p id="detailRentalOverdueDays" class="text-xs text-rose-600 dark:text-rose-400 mt-1">-</p>
-                                        <p id="detailRentalPenaltyAmount" class="text-sm font-semibold text-rose-700 dark:text-rose-300 mt-2 font-geist-mono">-</p>
+                                        <p id="detailRentalPenaltyAmount" class="text-sm font-semibold text-rose-700 dark:text-rose-300 mt-2 font-harmonia">-</p>
                                     </div>
                                 </div>
                             </div>
@@ -183,14 +183,14 @@
                                 {{-- Deposit Collected --}}
                                 <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-4 border border-neutral-200 dark:border-neutral-800">
                                     <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-1">Deposit Collected</p>
-                                    <p id="detailRentalDeposit" class="text-xl font-bold text-neutral-900 dark:text-white font-geist-mono">₱0</p>
+                                    <p id="detailRentalDeposit" class="text-xl font-bold text-neutral-900 dark:text-white font-harmonia">₱0</p>
                                     <p id="detailRentalDepositStatus" class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">-</p>
                                 </div>
 
                                 {{-- Penalty Amount --}}
                                 <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-4 border border-neutral-200 dark:border-neutral-800">
                                     <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-1">Late Penalty</p>
-                                    <p id="detailRentalPenalty" class="text-xl font-bold text-neutral-900 dark:text-white font-geist-mono">₱0</p>
+                                    <p id="detailRentalPenalty" class="text-xl font-bold text-neutral-900 dark:text-white font-harmonia">₱0</p>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +254,7 @@
                                     <x-icon name="file-text" class="h-4 w-4" />
                                     <span>Invoices</span>
                                 </div>
-                                <span id="detailRentalInvoicesCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 invoices</span>
+                                <span id="detailRentalInvoicesCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 invoices</span>
                             </div>
 
                             <div id="detailRentalInvoices" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-48 overflow-y-auto">
@@ -641,7 +641,7 @@
             linkedReservationEl.innerHTML = '<div class="flex items-center justify-between">' +
                 '<div class="flex items-center gap-3">' +
                 '<div class="h-8 w-8 rounded-lg bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center flex-shrink-0">' +
-                '<span class="text-[10px] font-bold text-violet-600 dark:text-violet-400 font-geist-mono">#' + rental.reservation_id + '</span>' +
+                '<span class="text-[10px] font-bold text-violet-600 dark:text-violet-400 font-harmonia">#' + rental.reservation_id + '</span>' +
                 '</div>' +
                 '<p class="text-sm font-medium text-neutral-900 dark:text-white">Reservation #' + String(rental.reservation_id).padStart(3, '0') + '</p>' +
                 '</div>' +
@@ -719,7 +719,7 @@
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-3 flex-1 min-w-0">
                                     <div class="h-8 w-8 rounded-lg bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center flex-shrink-0">
-                                        <span class="text-[10px] font-bold text-neutral-600 dark:text-neutral-400 font-geist-mono">#${invoice.invoice_id}</span>
+                                        <span class="text-[10px] font-bold text-neutral-600 dark:text-neutral-400 font-harmonia">#${invoice.invoice_id}</span>
                                     </div>
                                     <div class="min-w-0 flex-1 flex flex-col">
                                         <p class="text-sm font-medium text-neutral-900 dark:text-white truncate">${invoiceDate}</p>

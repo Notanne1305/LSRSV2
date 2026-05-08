@@ -55,7 +55,7 @@
                                     <span>Reservation ID</span>
                                 </div>
                                 <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-3 border border-neutral-200 dark:border-neutral-800">
-                                    <p id="detailReservationId" class="text-sm font-semibold text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                    <p id="detailReservationId" class="text-sm font-semibold text-neutral-900 dark:text-white font-harmonia">-</p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                                             <x-icon name="phone" class="h-3 w-3 text-neutral-400" />
                                             <p class="text-xs text-neutral-500 dark:text-neutral-400">Contact Number</p>
                                         </div>
-                                        <p id="detailReservationCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-geist-mono">-</p>
+                                        <p id="detailReservationCustomerPhone" class="text-sm font-medium text-neutral-900 dark:text-white font-harmonia">-</p>
                                     </div>
                                 </div>
                             </div>
@@ -181,19 +181,19 @@
                         <div class="grid grid-cols-3 gap-3">
                             {{-- Total Items --}}
                             <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-4 border border-neutral-200 dark:border-neutral-800 text-center">
-                                <p id="detailTotalItems" class="text-2xl font-bold text-neutral-900 dark:text-white font-geist-mono">0</p>
+                                <p id="detailTotalItems" class="text-2xl font-bold text-neutral-900 dark:text-white font-harmonia">0</p>
                                 <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">Total Items</p>
                             </div>
 
                             {{-- Total Quantity --}}
                             <div class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl p-4 border border-neutral-200 dark:border-neutral-800 text-center">
-                                <p id="detailTotalQuantity" class="text-2xl font-bold text-neutral-900 dark:text-white font-geist-mono">0</p>
+                                <p id="detailTotalQuantity" class="text-2xl font-bold text-neutral-900 dark:text-white font-harmonia">0</p>
                                 <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">Total Qty</p>
                             </div>
 
                             {{-- Total Amount --}}
                             <div class="bg-gradient-to-br from-violet-500/10 to-purple-500/10 dark:from-violet-500/20 dark:to-purple-500/20 rounded-xl p-4 border border-violet-200 dark:border-violet-800/50 text-center">
-                                <p id="detailTotalAmount" class="text-2xl font-bold text-violet-600 dark:text-violet-400 font-geist-mono">₱0</p>
+                                <p id="detailTotalAmount" class="text-2xl font-bold text-violet-600 dark:text-violet-400 font-harmonia">₱0</p>
                                 <p class="text-xs text-violet-600/70 dark:text-violet-400/70 mt-1">Est. Total</p>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                                     <x-icon name="package" class="h-4 w-4" />
                                     <span>Reserved Items</span>
                                 </div>
-                                <span id="detailItemsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 items</span>
+                                <span id="detailItemsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 items</span>
                             </div>
 
                             <div id="detailReservedItems" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-64 overflow-y-auto">
@@ -223,7 +223,7 @@
                                     <x-icon name="shopping-bag" class="h-4 w-4" />
                                     <span>Related Rentals</span>
                                 </div>
-                                <span id="detailRentalsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 rentals</span>
+                                <span id="detailRentalsCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 rentals</span>
                             </div>
 
                             <div id="detailRelatedRentals" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-40 overflow-y-auto">
@@ -241,7 +241,7 @@
                                     <x-icon name="file-text" class="h-4 w-4" />
                                     <span>Related Invoices</span>
                                 </div>
-                                <span id="detailInvoicesCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-geist-mono">0 invoices</span>
+                                <span id="detailInvoicesCount" class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">0 invoices</span>
                             </div>
 
                             <div id="detailRelatedInvoices" class="bg-neutral-50 dark:bg-neutral-900/50 rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden max-h-40 overflow-y-auto">
@@ -556,11 +556,11 @@
                             </div>
                             <div class="flex items-center gap-4 flex-shrink-0 ml-4">
                                 <div class="text-right">
-                                    <p class="text-sm font-semibold text-neutral-900 dark:text-white font-geist-mono">₱${rentalPrice.toLocaleString()}</p>
+                                    <p class="text-sm font-semibold text-neutral-900 dark:text-white font-harmonia">₱${rentalPrice.toLocaleString()}</p>
                                     <p class="text-xs text-neutral-500 dark:text-neutral-400">× ${quantity}</p>
                                 </div>
                                 <div class="bg-violet-100 dark:bg-violet-900/30 rounded-lg px-2 py-1">
-                                    <p class="text-xs font-semibold text-violet-600 dark:text-violet-400 font-geist-mono">₱${subtotal.toLocaleString()}</p>
+                                    <p class="text-xs font-semibold text-violet-600 dark:text-violet-400 font-harmonia">₱${subtotal.toLocaleString()}</p>
                                 </div>
                             </div>
                         </div>
@@ -610,7 +610,7 @@
                         <div class="px-4 py-3 flex items-center justify-between hover:bg-neutral-100 dark:hover:bg-neutral-800/50 transition-colors">
                             <div class="flex items-center gap-3 flex-1 min-w-0">
                                 <div class="h-8 w-8 rounded-lg bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center flex-shrink-0">
-                                    <span class="text-[10px] font-bold text-neutral-600 dark:text-neutral-400 font-geist-mono">#${rental.rental_id}</span>
+                                    <span class="text-[10px] font-bold text-neutral-600 dark:text-neutral-400 font-harmonia">#${rental.rental_id}</span>
                                 </div>
                                 <div class="min-w-0 flex-1">
                                     <p class="text-sm font-medium text-neutral-900 dark:text-white truncate" title="${itemDisplay}">${itemDisplay}</p>
@@ -676,7 +676,7 @@
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-3 flex-1 min-w-0">
                                     <div class="h-8 w-8 rounded-lg bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center flex-shrink-0">
-                                        <span class="text-[10px] font-bold text-neutral-600 dark:text-neutral-400 font-geist-mono">#${invoice.invoice_id}</span>
+                                        <span class="text-[10px] font-bold text-neutral-600 dark:text-neutral-400 font-harmonia">#${invoice.invoice_id}</span>
                                     </div>
                                     <div class="min-w-0 flex-1 flex flex-col">
                                         <p class="text-sm font-medium text-neutral-900 dark:text-white truncate">${invoiceDate}</p>

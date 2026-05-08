@@ -13,19 +13,12 @@
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
-
-    {{-- Fonts: Geist & Geist Mono --}}
-    <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
-    >
-
     {{-- App styles --}}
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
 </head>
-<body class="min-h-screen flex font-geist bg-neutral-100 text-neutral-900 dark:bg-black dark:text-neutral-50">
+<body class="font-harmonia">
 <x-sidebar />
 
 <main class="flex-1 ml-64 flex flex-col px-10 py-8 overflow-x-hidden overflow-y-auto bg-gradient-to-b from-neutral-100 via-neutral-100 to-neutral-200 dark:from-black dark:via-black dark:to-neutral-950">
@@ -36,7 +29,7 @@
                 <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white transition-colors duration-300 ease-in-out">
                     Payments and Billing
                 </h1>
-                <p class="mt-1 text-sm font-geist-mono text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
+                <p class="mt-1 text-sm font-harmonia text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
                     Track payments and billing
                 </p>
             </div>
@@ -382,12 +375,12 @@
                   : '-';
 
             row.innerHTML = `
-                <td class="py-3.5 pr-4 pl-4 text-neutral-500 font-geist-mono">${(inv.invoice?.invoice_number ?? inv.invoice_number ?? 'N/A') }</td>
+                <td class="py-3.5 pr-4 pl-4 text-neutral-500 font-harmonia">${(inv.invoice?.invoice_number ?? inv.invoice_number ?? 'N/A') }</td>
                 <td class="py-3.5 pr-4 text-neutral-900 dark:text-neutral-100">${customer}</td>
-                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-geist-mono">₱${parseFloat(inv.invoice?.total_amount ?? inv.total_amount ?? 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
-                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-geist-mono">₱${parseFloat(inv.invoice?.amount_paid ?? inv.amount_paid ?? 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
-                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-geist-mono">₱${parseFloat(inv.invoice?.balance_due ?? inv.balance_due ?? 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
-                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-geist-mono">${invoiceDate}</td>
+                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-harmonia">₱${parseFloat(inv.invoice?.total_amount ?? inv.total_amount ?? 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-harmonia">₱${parseFloat(inv.invoice?.amount_paid ?? inv.amount_paid ?? 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-harmonia">₱${parseFloat(inv.invoice?.balance_due ?? inv.balance_due ?? 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+                <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-harmonia">${invoiceDate}</td>
                 <td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 capitalize">${invoiceType}</td>
                 <td class="py-3.5 pr-2">
                     <span class="inline-flex items-center rounded-full ${statusClass} px-2 py-1 text-[11px] font-medium border transition-colors duration-300 ease-in-out">

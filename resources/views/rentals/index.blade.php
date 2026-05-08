@@ -13,10 +13,6 @@
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
-
-    {{-- Fonts: Geist & Geist Mono --}}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
-
     {{-- App styles --}}
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -34,7 +30,7 @@
     </style>
 </head>
 
-<body class="min-h-screen flex font-geist bg-neutral-100 text-neutral-900 dark:bg-black dark:text-neutral-50">
+<body class="font-harmonia">
 <x-sidebar />
 
 <main class="rentals-main-scrollbar flex-1 ml-64 flex flex-col px-10 py-8 overflow-x-hidden overflow-y-auto bg-gradient-to-b from-neutral-100 via-neutral-100 to-neutral-200 dark:from-black dark:via-black dark:to-neutral-950">
@@ -45,7 +41,7 @@
                 <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white transition-colors duration-300 ease-in-out">
                     Rental Tracking
                 </h1>
-                <p class="mt-1 text-sm font-geist-mono text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
+                <p class="mt-1 text-sm font-harmonia text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
                     Monitor active rentals and return dates
                 </p>
             </div>
@@ -303,13 +299,13 @@
                     Showing <span id="pageStart">0</span> to <span id="pageEnd">0</span> of <span id="pageTotal">0</span> results
                 </div>
                 <div class="flex items-center gap-2">
-                    <button id="prevBtn" onclick="previousPage()" class="text-xs rounded-lg px-3 py-1.5 border border-neutral-300 bg-white text-neutral-700 dark:border-neutral-800 dark:bg-black/60 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed font-geist" disabled>
+                    <button id="prevBtn" onclick="previousPage()" class="text-xs rounded-lg px-3 py-1.5 border border-neutral-300 bg-white text-neutral-700 dark:border-neutral-800 dark:bg-black/60 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed font-harmonia" disabled>
                         Previous
                     </button>
                     <div id="pageInfo" class="text-xs text-neutral-600 dark:text-neutral-300 min-w-[100px] text-center">
                         Page 1
                     </div>
-                    <button id="nextBtn" onclick="nextPage()" class="text-xs rounded-lg px-3 py-1.5 border border-neutral-300 bg-white text-neutral-700 dark:border-neutral-800 dark:bg-black/60 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed font-geist" disabled>
+                    <button id="nextBtn" onclick="nextPage()" class="text-xs rounded-lg px-3 py-1.5 border border-neutral-300 bg-white text-neutral-700 dark:border-neutral-800 dark:bg-black/60 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed font-harmonia" disabled>
                         Next
                     </button>
                 </div>
@@ -709,14 +705,14 @@
                         : '<span class="h-4 w-4 inline-block"></span>'
                     ) +
                 '</td>' +
-                '<td class="py-3.5 pr-4 text-neutral-500 font-geist-mono">#' + (rental.rental_id || 'N/A') + '</td>' +
+                '<td class="py-3.5 pr-4 text-neutral-500 font-harmonia">#' + (rental.rental_id || 'N/A') + '</td>' +
                 '<td class="py-3.5 pr-4 text-neutral-900 dark:text-neutral-100">' + customerName + '</td>' +
                 '<td class="py-3.5 pr-4">' +
                     '<div class="text-neutral-900 dark:text-neutral-100">' + itemName + '</div>' +
-                    (itemSku ? '<div class="text-[11px] text-neutral-500 font-geist-mono">' + itemSku + '</div>' : '') +
+                    (itemSku ? '<div class="text-[11px] text-neutral-500 font-harmonia">' + itemSku + '</div>' : '') +
                 '</td>' +
-                '<td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-geist-mono">' + formatDate(rental.released_date) + '</td>' +
-                '<td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-geist-mono">' + formatDate(rental.due_date) + '</td>' +
+                '<td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-harmonia">' + formatDate(rental.released_date) + '</td>' +
+                '<td class="py-3.5 pr-4 text-neutral-600 dark:text-neutral-300 font-harmonia">' + formatDate(rental.due_date) + '</td>' +
                 '<td class="py-3.5 pr-4"><span class="inline-flex items-center rounded-full ' + statusColor + ' px-2 py-1 text-[11px] font-medium border transition-colors duration-300 ease-in-out"><span class="mr-1.5 h-1.5 w-1.5 rounded-full ' + statusBgColor + '"></span>' + statusLabel + '</span></td>';
 
             // Add click handler for row (excluding checkbox clicks)

@@ -5,10 +5,10 @@
             LS
         </div>
         <div class="flex flex-col">
-            <span class="text-sm font-semibold tracking-tight text-neutral-900 dark:text-white" style="font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
-                Love &amp; Styles
+            <span class="text-sm font-semibold tracking-tight text-neutral-900 dark:text-white">
+                <span class="font-colonna">Love</span> <span class="font-pristina">&amp; Styles</span>
             </span>
-            <span class="text-xs text-neutral-500 dark:text-neutral-400" style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;">
+            <span class="text-xs text-neutral-500 dark:text-neutral-400 font-harmonia">
                 Rental System
             </span>
         </div>
@@ -39,7 +39,6 @@
             {{ $isActive
                 ? 'bg-violet-600 dark:text-neutral-900 text-neutral-100 shadow-[0_0_0_1px_rgba(167,139,250,0.7)] cursor-default pointer-events-none'
                 : 'text-neutral-700 dark:text-neutral-300 hover:bg-violet-200 dark:hover:bg-neutral-900 hover:text-neutral-900 dark:hover:text-neutral-100 cursor-pointer' }}"
-            style="font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;"
             >
             <span class="flex items-center justify-center h-8 w-8 {{ $isActive ? 'dark:text-neutral-900 text-neutral-100' : 'text-neutral-900 dark:text-neutral-100' }}">
                 <x-icon :name="$item['icon']" class="h-6 w-6" />
@@ -60,7 +59,6 @@
             id="darkModeToggle"
             onclick="toggleDarkMode()"
             class="flex w-full items-center justify-between rounded-xl px-3 py-2 text-[11px] font-medium text-neutral-700 dark:text-neutral-200 hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-all duration-200"
-            style="font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;"
         >
             <span class="flex items-center gap-2">
                 <span class="inline-flex h-6 w-10 items-center rounded-full bg-amber-500/20 dark:bg-violet-600/20 px-0.5 relative transition-all duration-300" id="toggleTrack">
@@ -91,7 +89,6 @@
             <button
                 type="submit"
                 class="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-[12px] font-medium text-red-600 dark:text-red-400 hover:bg-red-500/10 hover:text-red-500 dark:hover:text-red-300 transition-all duration-200"
-                style="font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;"
             >
                 <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-red-500/10 text-red-600 dark:text-red-400">
                     <x-icon name="logout" class="h-4 w-4" />
@@ -100,13 +97,6 @@
             </button>
         </form>
     </div>
-
-    {{-- Fonts: Geist & Geist Mono from Google Fonts --}}
-    <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
-    >
-
     <script>
         function getThemeState() {
             if (globalThis.themeController && typeof globalThis.themeController.getState === 'function') {

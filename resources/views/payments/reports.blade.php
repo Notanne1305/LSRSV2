@@ -12,11 +12,6 @@
     <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
-    <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
-    >
-
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
@@ -59,7 +54,7 @@
         }
     </style>
 </head>
-<body class="min-h-screen flex font-geist bg-neutral-100 text-neutral-900 dark:bg-black dark:text-neutral-50 transition-colors duration-300 ease-in-out">
+<body class="font-harmonia">
     <x-sidebar />
 
     <main class="flex-1 ml-64 flex flex-col px-10 py-8 overflow-x-hidden overflow-y-auto bg-gradient-to-b from-neutral-100 via-neutral-100 to-neutral-200 dark:from-black dark:via-black dark:to-neutral-950 transition-colors duration-300 ease-in-out">
@@ -70,7 +65,7 @@
                     <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white transition-colors duration-300 ease-in-out">
                         Payment Reports
                     </h1>
-                    <p class="mt-1 text-sm font-geist-mono text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
+                    <p class="mt-1 text-sm font-harmonia text-neutral-500 dark:text-neutral-400 transition-colors duration-300 ease-in-out">
                         Analyze payment data and generate detailed reports
                     </p>
                 </div>
@@ -539,8 +534,8 @@
             tbody.innerHTML = customers.map(customer => `
                 <tr class="border-b border-neutral-200 hover:bg-neutral-100 dark:border-neutral-900/60 dark:hover:bg-white/5 transition-colors">
                     <td class="py-3.5 pr-4 pl-4 text-neutral-900 dark:text-neutral-100">${customer.customer_name || 'Unknown'}</td>
-                    <td class="py-3.5 pr-4 text-center font-geist-mono">${customer.payment_count || 0}</td>
-                    <td class="py-3.5 pr-4 font-geist-mono text-emerald-600 dark:text-emerald-400">₱${(customer.total_paid || 0).toLocaleString()}</td>
+                    <td class="py-3.5 pr-4 text-center font-harmonia">${customer.payment_count || 0}</td>
+                    <td class="py-3.5 pr-4 font-harmonia text-emerald-600 dark:text-emerald-400">₱${(customer.total_paid || 0).toLocaleString()}</td>
                 </tr>
             `).join('');
         }

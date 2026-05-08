@@ -681,8 +681,8 @@
                     <td class="py-2.5 pr-3 text-neutral-900 dark:text-neutral-100">${item.name}</td>
                     <td class="py-2.5 pr-3 text-neutral-600 dark:text-neutral-400">${item.size}</td>
                     <td class="py-2.5 pr-3 text-neutral-600 dark:text-neutral-400">${item.color}</td>
-                    <td class="py-2.5 pr-3 text-right text-neutral-700 dark:text-neutral-300 font-geist-mono">₱${item.rental_price.toLocaleString('en-PH', {minimumFractionDigits: 2})}</td>
-                    <td class="py-2.5 pr-3 text-right text-neutral-700 dark:text-neutral-300 font-geist-mono">₱${item.deposit_amount.toLocaleString('en-PH', {minimumFractionDigits: 2})}</td>
+                    <td class="py-2.5 pr-3 text-right text-neutral-700 dark:text-neutral-300 font-harmonia">₱${item.rental_price.toLocaleString('en-PH', {minimumFractionDigits: 2})}</td>
+                    <td class="py-2.5 pr-3 text-right text-neutral-700 dark:text-neutral-300 font-harmonia">₱${item.deposit_amount.toLocaleString('en-PH', {minimumFractionDigits: 2})}</td>
                     <td class="py-2.5 pr-3 text-center">
                         <input
                             type="number"
@@ -693,7 +693,7 @@
                             class="w-14 text-center text-xs rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-black/60 text-neutral-700 dark:text-neutral-100 px-2 py-1 focus:outline-none focus:border-violet-500"
                         />
                     </td>
-                    <td class="py-2.5 text-right text-neutral-900 dark:text-neutral-100 font-geist-mono font-medium">₱${subtotal.toLocaleString('en-PH', {minimumFractionDigits: 2})}</td>
+                    <td class="py-2.5 text-right text-neutral-900 dark:text-neutral-100 font-harmonia font-medium">₱${subtotal.toLocaleString('en-PH', {minimumFractionDigits: 2})}</td>
                     <td class="py-2.5 pl-2 text-right">
                         <button
                             type="button"
